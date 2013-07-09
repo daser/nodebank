@@ -1,0 +1,12 @@
+!SESSION 2013-04-06 09:54:35.406 -----------------------------------------------
+eclipse.buildId=3.3.1.201212171919
+java.version=1.6.0_26
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_NG
+Command-line arguments:  -os linux -ws gtk -arch x86 -data /home/hacker/nodebank
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-04-06 10:00:23.238
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.StudioAnalytics$1
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-04-06 10:00:23.238
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.StudioAnalytics$1

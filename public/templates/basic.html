@@ -1,0 +1,568 @@
+<form>
+        <table width="790" style=" text-align:left; margin:auto">
+            <tbody><tr align="center">
+                <td>                    
+                
+        <table border="0" cellpadding="2" cellspacing="2" bgcolor="#f9f9f9" width="100%" style="border: thin solid;">
+            <tbody><tr>
+                <td height="94" align="center">
+                    <div id="Panel14">
+	
+                        <table class="banneropt1" width="100%" border="0" height="92">
+                            <tbody><tr>
+                                <td width="50" height="88">&nbsp;</td>
+                                <td></td>
+                            </tr>
+                        </tbody></table>
+                    
+</div>
+                    
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td align="center">
+       		<table id="Menu2" style="" border="1" cellpadding="2" cellspacing="0" rules="all">
+	<tbody><tr align="center" valign="middle">
+		<td class=""><a href="">Personal Detail</a></td>
+		<td><a href="">Academic Qualifications</a></td>
+		<td><a href="">Work Experiences</a></td>
+		<td><a href="" >Post Primary School</a></td><td><a href="">Referee Infor.</a></td><td><a href="">Other Skills</a></td>
+		<td><a href="">Uploads Photograph</a></td>
+	</tr>
+</tbody></table>
+
+</td>
+            </tr>
+            <tr>
+                <td height="8" align="center"><div style="border-bottom:thin dotted #333; height:8px">&nbsp;</div>
+               </td>
+            </tr>
+             <tr>
+                <td align="center"><br clear="all">
+                <div id="cvContent">
+	
+	
+	
+    
+	
+<style type="text/css">
+#panel td{ height:35px; padding:4px 0 4px 0;}
+#panel td input{ height:25px;}
+</style>
+
+
+<div id="panel" tabindex="5" style="">
+	<form>
+            <div id="updateP1">
+		
+                    <table style="font-size: 8pt; font-family: Verdana;" width="100%">
+                        <tbody><tr>
+                            <td colspan="4">
+                                <table style="font-size: 8pt; font-family: Verdana;" width="100%">
+                                    <tbody><tr>
+                                        <td>
+                                            <strong>
+                                            PERSONAL DATA</strong></td>
+                                        <td align="right">
+                                            Please note that fields markded in <span style="color: rgb(255, 0, 0);">(*)</span> are mandatory</td>
+                                        <td>
+				
+                                           <a id="" href="">Home Page</a></td>
+                                    </tr>
+                                </tbody></table>
+                </td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td style="height: 30px;">
+                                Surname <span style="color: rgb(255, 0, 51);">*</span></td>
+                            <td style="width: 247px; height: 30px;">
+				<input name="surname" value="<%=name.lastname %>" maxlength="100" id="surname" tabindex="9" class="textbox" style="  width: 184px;" type="text"><span id="RequiredFieldValidator3" style="color: White; visibility: hidden;">*</span></td>
+                            <td style="color: rgb(0, 0, 0); height: 30px;">
+                                First Name <span style="color: rgb(255, 0, 51);">*</span></td>
+                            <td style="color: rgb(0, 0, 0); height: 30px;"><input name="firstname" value="<%=name.firstname %>" maxlength="100" id="firstname" tabindex="10" class="textbox" style="  width: 184px;" type="text">                              <span id="RequiredFieldValidator4" style="color: White; visibility: hidden;">*</span></td>
+                        </tr>
+                        <tr style="font-size: 8pt; color: rgb(0, 0, 0);">
+                            <td style="height: 30px;"><span>
+                                Other Na</span>me</td>
+                            <td style="width: 247px; height: 30px;">
+				<input name="othername" value="<%=name.middlename %>" maxlength="100" id="othername" tabindex="11" class="textbox" style="  width: 184px;" type="text"></td>
+                            <td style="height: 30px;"><span>
+                                
+                                Title </span><span style="color: rgb(255, 0, 51);">*</span></td>
+                            <td style="color: rgb(0, 0, 0); height: 30px;">
+				<select name="title" id="title" tabindex="12" style="font-family: Verdana; font-size: 8pt; height: 24px; width: 112px;">
+					<option value=" " <%= title == null ?  'selected' : '' %>>Please Select</option>
+			<option value="Mr" <%= title == 'Mr' ?  'selected' : '' %>>Mr</option>
+			<option value="Mrs" <%= title == 'Mrs' ?  'selected' : '' %>>Mrs</option>
+			<option value="Miss" <%= title == 'Miss' ?  'selected' : '' %>>Miss</option>
+
+			</select>
+		<span id="RequiredFieldValidator10" style="color: White; visibility: hidden;">*</span></td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td style="height: 30px;">
+                                Date of Birth <span style="color: rgb(255, 0, 51);">*<span id="RequiredFieldValidator5" style="color: White; visibility: hidden;">*</span></span></td>
+                            <td style="width: 247px; color: rgb(0, 0, 0); height: 30px;">
+				<input name="dob" value="<%=dob %>" id="dob"  tabindex="13" class="textbox" style="  width: 98px;" type="text">
+(yyyy-mm-dd)</td>
+                            <td style="height: 30px;">
+                                Gender <span style="color: rgb(255, 0, 51);">*</span></td>
+                            <td style="color: rgb(0, 0, 0); height: 30px;">
+				<select name="gender" id="gender" tabindex="14" style="font-family: Verdana; font-size: 8pt; height: 24px; width: 112px;">
+			<option value=" " <%= gender == null ?  'selected' : '' %>>Please Select</option>
+			<option value="Male" <%= gender == 'Male' ?  'selected' : '' %>>Male</option>
+			<option value="Female" <%= gender == 'Female' ?  'selected' : '' %>>Female</option>
+
+		</select><span id="RequiredFieldValidator11" style="color: White; visibility: hidden;">*</span></td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td style="height: 30px;">
+                                <span>
+                                Marital Status </span><span style="color: rgb(255, 0, 51);">*</span></td>
+                            <td style="width: 247px; color: rgb(0, 0, 0); height: 30px;">
+				<select name="marital_status" id="marital_status" tabindex="15" style="font-family: Verdana; font-size: 8pt; height: 24px; width: 184px;">
+			<option value=" " <%= marital_status == null ?  'selected' : '' %>>Please Select</option>
+			<option value="Single" <%= marital_status == 'Single' ?  'selected' : '' %>>Single</option>
+			<option value="Married" <%= marital_status == 'Married' ?  'selected' : '' %>>Married</option>
+			<option value="Divorced" <%= marital_status == 'Divorced' ?  'selected' : '' %>>Divorced</option>
+			<option value="Separated" <%= marital_status == 'Separated' ?  'selected' : '' %>>Separated</option>
+
+		</select><span id="RequiredFieldValidator12" style="color: White; visibility: hidden;">*</span></td>
+                            <td style="color: rgb(0, 0, 0); height: 30px;">
+                                Religion <span style="color: rgb(255, 0, 51);">*</span></td>
+                            <td style="color: rgb(0, 0, 0); height: 30px;">
+				<select name="religion" id="religion" tabindex="16" style="font-family: Verdana; font-size: 8pt; height: 24px; width: 184px;">
+			<option value=" " <%= religion == null ?  'selected' : '' %>>Please Select</option>
+			<option value="Christianity" <%= religion == 'Christianity' ?  'selected' : '' %>>Christianity</option>
+			<option value="Islam" <%= religion == 'Islam' ?  'selected' : '' %>>Islam</option>
+			<option value="Other" <%= religion == 'Other' ?  'selected' : '' %>>Other</option>
+
+		</select></td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td style="height: 30px;">
+                                Nationality <span style="color: rgb(0, 0, 0);"><strong style="color: rgb(255, 0, 51);">*</strong></span></td>
+                            <td style="width: 247px; font-weight: bold; color: rgb(0, 0, 0); height: 30px;">
+				<select name="nationality" id="nationality" tabindex="17" style="font-family: Verdana; font-size: 8pt; height: 24px; width: 184px;">
+			<option selected="selected" value="Nigeria">Nigeria</option>
+
+		</select><span id="RequiredFieldValidator16" style="color: White; visibility: hidden;">*</span></td>
+                            <td style="height: 30px;">
+                                State of Origin <span style="color: rgb(255, 0, 51);">*</span></td>
+                            <td style="color: rgb(0, 0, 0); height: 30px;">
+				<select name="state_of_origin" id="state_of_origin" tabindex="18" style="font-family: Verdana; font-size: 8pt; height: 24px; width: 184px;" onchange="javascript: getLga(&#39;&#39;);">
+				<option value="" <%= state_of_origin == null ?  'selected' : '' %>>::: Select ::: </option>
+				<option value="ABIA" <%= state_of_origin == 'ABIA' ?  'selected' : '' %>>ABIA</option>
+				<option value="ADAMAWA" <%= state_of_origin == 'ADAMAWA' ?  'selected' : '' %>>ADAMAWA</option>
+				<option value="AKWA IBOM" <%= state_of_origin == 'AKWA IBOM' ?  'selected' : '' %>>AKWA IBOM</option>
+				<option value="ANAMBRA" <%= state_of_origin == 'ANAMBRA' ?  'selected' : '' %>>ANAMBRA</option>
+				<option value="BAUCHI" <%= state_of_origin == 'BAUCHI' ?  'selected' : '' %>>BAUCHI</option>
+				<option value="BAYELSA" <%= state_of_origin == 'BAYELSA' ?  'selected' : '' %>>BAYELSA</option>
+				<option value="BENUE" <%= state_of_origin == 'BENUE' ?  'selected' : '' %>>BENUE</option>
+				<option value="BORNO" <%= state_of_origin == 'BORNO' ?  'selected' : '' %>>BORNO</option>
+				<option value="CROSS RIVER" <%= state_of_origin == 'CROSS RIVER' ?  'selected' : '' %>>CROSS RIVER</option>
+				<option value="DELTA" <%= state_of_origin == 'DELTA' ?  'selected' : '' %>>DELTA</option>
+				<option value="EBONYI" <%= state_of_origin == 'EBONYI' ?  'selected' : '' %>>EBONYI</option>
+				<option value="EDO" <%= state_of_origin == 'EDO' ?  'selected' : '' %>>EDO</option>
+				<option value="EKITI" <%= state_of_origin == 'EKITI' ?  'selected' : '' %>>EKITI</option>
+				<option value="ENUGU" <%= state_of_origin == 'ENUGU' ?  'selected' : '' %>>ENUGU</option>
+				<option value="FCT" <%= state_of_origin == 'FCT' ?  'selected' : '' %>>FCT</option>
+				<option value="GOMBE" <%= state_of_origin == 'GOMBE' ?  'selected' : '' %>>GOMBE</option>
+				<option value="IMO" <%= state_of_origin == 'IMO' ?  'selected' : '' %>>IMO</option>
+				<option value="JIGAWA" <%= state_of_origin == 'JIGAWA' ?  'selected' : '' %>>JIGAWA</option>
+				<option value="KADUNA" <%= state_of_origin == 'KADUNA' ?  'selected' : '' %>>KADUNA</option>
+				<option value="KANO" <%= state_of_origin == 'KANO' ?  'selected' : '' %>>KANO</option>
+				<option value="KATSINA" <%= state_of_origin == 'KATSINA' ?  'selected' : '' %>>KATSINA</option>
+				<option value="KEBBI" <%= state_of_origin == 'KEBBI' ?  'selected' : '' %>>KEBBI</option>
+				<option value="KOGI" <%= state_of_origin == 'KOGI' ?  'selected' : '' %>>KOGI</option>
+				<option value="KWARA" <%= state_of_origin == 'KWARA' ?  'selected' : '' %>>KWARA</option>
+				<option value="LAGOS" <%= state_of_origin == 'LAGOS' ?  'selected' : '' %>>LAGOS</option>
+				<option value="NASARAWA" <%= state_of_origin == 'NASARAWA' ?  'selected' : '' %>>NASARAWA</option>
+				<option value="NIGER" <%= state_of_origin == 'NIGER' ?  'selected' : '' %>>NIGER</option>
+				<option value="OGUN" <%= state_of_origin == 'OGUN' ?  'selected' : '' %>>OGUN</option>
+				<option value="ONDO" <%= state_of_origin == 'ONDO' ?  'selected' : '' %>>ONDO</option>
+				<option value="OSUN" <%= state_of_origin == 'OSUN' ?  'selected' : '' %>>OSUN</option>
+				<option value="OYO" <%= state_of_origin == 'OYO' ?  'selected' : '' %>>OYO</option>
+				<option value="PLATEAU" <%= state_of_origin == 'PLATEAU' ?  'selected' : '' %>>PLATEAU</option>
+				<option value="RIVERS" <%= state_of_origin == 'RIVERS' ?  'selected' : '' %>>RIVERS</option>
+				<option value="SOKOTO" <%= state_of_origin == 'SOKOTO' ?  'selected' : '' %>>SOKOTO</option>
+				<option value="TARABA" <%= state_of_origin == 'TARABA' ?  'selected' : '' %>>TARABA</option>
+				<option value="YOBE" <%= state_of_origin == 'YOBE' ?  'selected' : '' %>>YOBE</option>
+				<option value="ZAMFARA" <%= state_of_origin == 'ZAMFARA' ?  'selected' : '' %>>ZAMFARA</option>
+		</select><span id="RequiredFieldValidator25" style="color: White; visibility: hidden;">*</span></td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td style="height: 30px;">
+                                LGA</td>
+                            <td style="width: 247px; height: 30px;">
+			<div id="lgaDiv">					</div>
+            	
+			
+
+</td>
+                            <td style="height: 30px;">
+                            </td>
+                            <td style="height: 30px;" valign="top">
+				</td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td style="height: 30px;">
+                                Home Town</td>
+                            <td style="width: 247px; height: 30px;">
+				<input name="home_town" value="<%=home_town %>" maxlength="100" id="home_town" tabindex="21" class="textbox" style="  width: 185px;" type="text"></td>
+                            <td style="height: 30px;">
+                                Work experience <span style="color: rgb(255, 0, 51);">*</span></td>
+                            <td style="height: 30px;">
+				<select name="work_experience" id="work_experience" tabindex="22" style="font-family: Verdana; font-size: 8pt; height: 24px; width: 184px;">
+			<option value="Please Select" <%= work_experience == null ?  'selected' : '' %>>Please Select</option>
+			<option value="Experience Bank Related" <%= work_experience == 'Experience Bank Related' ?  'selected' : '' %>>Experience Bank Related</option>
+			<option value="Fresher" <%= work_experience == 'Fresher' ?  'selected' : '' %>>Fresher</option>
+			<option value="Others" <%= work_experience == 'Others' ?  'selected' : '' %>>Others</option>
+
+		</select><span id="RequiredFieldValidator17" style="color: White; visibility: hidden;">*</span></td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td style="height: 30px;">
+                                <span id="Label7" class="Label" style="display: inline-block; width: 121px;">Years of Experience</span><strong><span style="color: rgb(255, 0, 51);">*</span></strong>
+                                    </td>
+                            <td style="width: 247px; height: 30px;">
+				<select name="years_of_experience" id="years_of_experience" tabindex="23" style="font-family: Verdana; font-size: 8pt; height: 24px; width: 184px;">
+			<option value=" " <%= years_of_experience == null ?  'selected' : '' %>>Please Select</option>
+			<option value="0" <%= years_of_experience == '0' ?  'selected' : '' %>>0</option>
+			<option value="1" <%= years_of_experience == '1' ?  'selected' : '' %>>1</option>
+			<option value="2" <%= years_of_experience == '2' ?  'selected' : '' %>>2</option>
+			<option value="3" <%= years_of_experience == '3' ?  'selected' : '' %>>3</option>
+			<option value="4" <%= years_of_experience == '4' ?  'selected' : '' %>>4</option>
+			<option value="5" <%= years_of_experience == '5' ?  'selected' : '' %>>5</option>
+			<option value="6" <%= years_of_experience == '6' ?  'selected' : '' %>>6</option>
+			<option value="7" <%= years_of_experience == '7' ?  'selected' : '' %>>7</option>
+			<option value="8" <%= years_of_experience == '8' ?  'selected' : '' %>>8</option>
+			<option value="9" <%= years_of_experience == '9' ?  'selected' : '' %>>9</option>
+			<option value="10" <%= years_of_experience == '10' ?  'selected' : '' %>>10</option>
+			<option value="11" <%= years_of_experience == '11' ?  'selected' : '' %>>11</option>
+			<option value="12" <%= years_of_experience == '12' ?  'selected' : '' %>>12</option>
+			<option value="13" <%= years_of_experience == '13' ?  'selected' : '' %>>13</option>
+			<option value="14" <%= years_of_experience == '14' ?  'selected' : '' %>>14</option>
+			<option value="15" <%= years_of_experience == '15' ?  'selected' : '' %>>15</option>
+			<option value="16" <%= years_of_experience == '16' ?  'selected' : '' %>>16</option>
+			<option value="17" <%= years_of_experience == '17' ?  'selected' : '' %>>17</option>
+			<option value="18" <%= years_of_experience == '18' ?  'selected' : '' %>>18</option>
+			<option value="19" <%= years_of_experience == '19' ?  'selected' : '' %>>19</option>
+			<option value="20" <%= years_of_experience == '20' ?  'selected' : '' %>>20</option>
+			<option value="21" <%= years_of_experience == '21' ?  'selected' : '' %>>21</option>
+			<option value="22" <%= years_of_experience == '22' ?  'selected' : '' %>>22</option>
+			<option value="23" <%= years_of_experience == '23' ?  'selected' : '' %>>23</option>
+			<option value="24" <%= years_of_experience == '24' ?  'selected' : '' %>>24</option>
+			<option value="25" <%= years_of_experience == '25' ?  'selected' : '' %>>25</option>
+			<option value="26" <%= years_of_experience == '26' ?  'selected' : '' %>>26</option>
+			<option value="27" <%= years_of_experience == '27' ?  'selected' : '' %>>27</option>
+			<option value="28" <%= years_of_experience == '28' ?  'selected' : '' %>>28</option>
+			<option value="29" <%= years_of_experience == '29' ?  'selected' : '' %>>29</option>
+			<option value="30" <%= years_of_experience == '30' ?  'selected' : '' %>>30</option>
+			<option value="31" <%= years_of_experience == '31' ?  'selected' : '' %>>31</option>
+			<option value="32" <%= years_of_experience == '32' ?  'selected' : '' %>>32</option>
+			<option value="33" <%= years_of_experience == '33' ?  'selected' : '' %>>33</option>
+			<option value="34" <%= years_of_experience == '34' ?  'selected' : '' %>>34</option>
+			<option value="35" <%= years_of_experience == '35' ?  'selected' : '' %>>35</option>
+			<option value="36" <%= years_of_experience == '36' ?  'selected' : '' %>>36</option>
+			<option value="37" <%= years_of_experience == '37' ?  'selected' : '' %>>37</option>
+			<option value="38" <%= years_of_experience == '38' ?  'selected' : '' %>>38</option>
+			<option value="39" <%= years_of_experience == '39' ?  'selected' : '' %>>39</option>
+			<option value="40" <%= years_of_experience == '40' ?  'selected' : '' %>>40</option>
+			<option value="41" <%= years_of_experience == '41' ?  'selected' : '' %>>41</option>
+			<option value="42" <%= years_of_experience == '42' ?  'selected' : '' %>>42</option>
+			<option value="43" <%= years_of_experience == '43' ?  'selected' : '' %>>43</option>
+			<option value="44" <%= years_of_experience == '44' ?  'selected' : '' %>>44</option>
+			<option value="45" <%= years_of_experience == '45' ?  'selected' : '' %>>45</option>
+
+		</select><span id="RequiredFieldValidator27" style="color: White; visibility: hidden;">*</span></td>
+                            <td style="height: 30px;">
+                                Language Spoken</td>
+                            <td style="height: 30px;">
+                                <input name="language" value="<%=language %>" id="language" class="textbox" style="width: 182px;" type="text"></td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td style="height: 30px;">
+                                NYSC Completed <strong><span style="color: rgb(255, 0, 51);">*</span></strong></td>
+                            <td style="width: 247px; height: 30px;">
+				<select name="nysc_completed" id="nysc_completed" tabindex="24" style="font-family: Verdana; font-size: 8pt; height: 24px; width: 186px;">
+			<option value=" " <%= nysc_completed == '' ?  'selected' : '' %>>Please Select</option>
+			<option value="Yes" <%= nysc_completed == 'Yes' ?  'selected' : '' %>>Yes</option>
+			<option value="No" <%= nysc_completed == 'No' ?  'selected' : '' %>>No</option>
+
+		</select><span id="RequiredFieldValidator26" style="color: White; visibility: hidden;">*</span></td>
+                            <td style="height: 30px;">
+				</td>
+                            <td style="height: 30px;" valign="top">
+                                Separate with comma.</td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td style="height: 22px;">
+                                </td>
+                            <td colspan="3" style="height: 22px;" valign="top">
+                                Make sure you enter a valid NYSC Certificate No. if you pick Yes.</td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td style="height: 30px;">
+                                NYSC Certificate No<br>
+                                (Upper case)</td>
+                            <td style="width: 247px; height: 30px;">
+				<input name="certificate_no" maxlength="100" id="certificate_no" tabindex="25" title="Use Upper case" class="textbox" style="  width: 185px;" type="text" value="<%=certificate_no %>"><span id="RequiredFieldValidator30" style="color: White; visibility: hidden;">*</span></td>
+                            <td style="height: 30px;">
+                            </td>
+                            <td style="height: 30px;">
+                            </td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td style="height: 30px;">
+                                Confirm NYSC
+                                <br>
+                                Certificate No</td>
+                            <td style="width: 247px; height: 30px;">
+				<input name="confirm_nysc" maxlength="100" id="confirm_nysc" tabindex="25" title="Use Upper case" class="textbox" style="  width: 183px;" value="<%=confirm_nysc %>" type="text"><span id="CompareValidator1" style="color: White; visibility: hidden;">*</span></td>
+                            <td style="height: 30px;">
+                                <span id="Label8" style="display: inline-block; width: 134px;">NYSC Date Completed</span><br>
+                                (yyyy-mm-dd)</td>
+                            <td style="height: 30px;">
+				<input name="nysc_date_completed" value="<%=nysc_date_completed %>" maxlength="100" id="nysc_date_completed" tabindex="26" class="textbox hasDatepicker" style="  width: 139px;" type="text"><span id="RequiredFieldValidator36" style="color: White; visibility: hidden;">*</span></td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td style="height: 3px;">
+                                    <span id="Label1" style="display: inline-block; height: 1px; width: 133px;"></span></td>
+                            <td style="width: 247px; height: 3px;">
+                            </td>
+                            <td style="height: 3px;">
+                            </td>
+                            <td style="height: 3px;">
+                            </td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td colspan="4" style="height: 17px;">
+                            </td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td colspan="2">
+                                <strong>
+                                Contact Address</strong></td>
+                            <td colspan="2">
+                                <strong>
+                                Permanent Address</strong></td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td>
+                            </td>
+                            <td style="width: 247px;">
+                            </td>
+                            <td colspan="2">
+				<span class="Label" style="display:none; height: 8px; width: 353px;"><input id="chSame" name="chSame" tabindex="34" type="checkbox">
+                <label for="chSame">Permanent address is the same as Residential</label></span></td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td style="height: 30px;">
+                                Address <span style="color: rgb(255, 0, 51);">*<span id="RequiredFieldValidator6" style="color: White; visibility: hidden;">*</span></span></td>
+                            <td style="width: 247px; height: 30px;">
+				<input name="contact_address" value="<%=contact_address %>" maxlength="100" id="contact_address" tabindex="27" class="textbox" style="  width: 216px;" type="text"></td>
+                            <td style="height: 30px;">
+                                Address <span style="color: rgb(255, 0, 51);">*<span id="RequiredFieldValidator8" style="color: White; visibility: hidden;">*</span></span></td>
+                            <td style="height: 30px;">
+				<input name="permanent_address" value="<%=permanent_address %>" maxlength="100" id="permanent_address" tabindex="35" class="textbox" style="  width: 216px;" type="text"></td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td style="height: 30px;">
+                                Address Line 2</td>
+                            <td style="width: 247px; height: 30px;">
+				<input name="contact_addline" maxlength="100" value="<%=contact_addline %>" id="contact_addline" tabindex="28" class="textbox" style="  width: 216px;" type="text"></td>
+                            <td style="height: 30px;">
+                                Address Line 2</td>
+                            <td style="height: 30px;">
+				<input name="permanent_addline" maxlength="100" value="<%=permanent_addline %>" id="permanent_addline" tabindex="36" class="textbox" style="  width: 216px;" type="text"></td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td style="height: 30px;">
+                                City <span style="color: rgb(255, 0, 51);">*<span id="RequiredFieldValidator7" style="color: White; visibility: hidden;">*</span></span></td>
+                            <td style="width: 247px; height: 30px;">
+				<input name="contact_addcity" value="<%=contact_addcity %>" maxlength="100" id="contact_addcity" tabindex="29" class="textbox" style="  width: 184px;" type="text"></td>
+                            <td style="height: 30px;">
+                                City <span style="color: rgb(255, 0, 51);">*<span id="RequiredFieldValidator9" style="color: White; visibility: hidden;">*</span></span></td>
+                            <td style="height: 30px;">
+				<input name="permanent_addcity" value="<%=permanent_addcity %>" maxlength="100" id="permanent_addcity" tabindex="37" class="textbox" style="  width: 184px;" type="text"></td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td style="height: 30px;">
+                                Country <span style="color: rgb(255, 0, 51);">*</span></td>
+                            <td style="width: 247px; height: 30px;">
+				<select name="contact_addcountry" id="contact_addcountry" tabindex="30" style="font-family: Verdana; font-size: 8pt; height: 24px; width: 184px;">
+			<option selected="selected" value="Nigeria">Nigeria</option>
+		</select><span id="RequiredFieldValidator20" style="color: White; visibility: hidden;">*</span></td>
+                            <td style="height: 30px;">
+                                Country <span style="color: rgb(255, 0, 51);">*</span></td>
+                            <td style="height: 30px;">
+				<select name="permanent_addcountry" id="permanent_addcountry" tabindex="38" style="font-family: Verdana; font-size: 8pt; height: 24px; width: 184px;">
+			<option selected="selected" value="Nigeria">Nigeria</option>
+
+		</select><span id="RequiredFieldValidator23" style="color: White; visibility: hidden;">*</span></td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td style="height: 30px;">
+                                State</td>
+                            <td style="width: 247px; height: 30px;">
+				<select name="contact_addstate" id="contact_addstate" tabindex="31" style="font-family: Verdana; font-size: 8pt; height: 24px; width: 184px;">
+									<option value="" <%= contact_addstate == null ?  'selected' : '' %>>::: Select ::: </option>
+				<option value="ABIA" <%= contact_addstate == 'ABIA' ?  'selected' : '' %>>ABIA</option>
+				<option value="ADAMAWA" <%= contact_addstate == 'ADAMAWA' ?  'selected' : '' %>>ADAMAWA</option>
+				<option value="AKWA IBOM" <%= contact_addstate == 'AKWA IBOM' ?  'selected' : '' %>>AKWA IBOM</option>
+				<option value="ANAMBRA" <%= contact_addstate == 'ANAMBRA' ?  'selected' : '' %>>ANAMBRA</option>
+				<option value="BAUCHI" <%= contact_addstate == 'BAUCHI' ?  'selected' : '' %>>BAUCHI</option>
+				<option value="BAYELSA" <%= contact_addstate == 'BAYELSA' ?  'selected' : '' %>>BAYELSA</option>
+				<option value="BENUE" <%= contact_addstate == 'BENUE' ?  'selected' : '' %>>BENUE</option>
+				<option value="BORNO" <%= contact_addstate == 'BORNO' ?  'selected' : '' %>>BORNO</option>
+				<option value="CROSS RIVER" <%= contact_addstate == 'CROSS RIVER' ?  'selected' : '' %>>CROSS RIVER</option>
+				<option value="DELTA" <%= contact_addstate == 'DELTA' ?  'selected' : '' %>>DELTA</option>
+				<option value="EBONYI" <%= contact_addstate == 'EBONYI' ?  'selected' : '' %>>EBONYI</option>
+				<option value="EDO" <%= contact_addstate == 'EDO' ?  'selected' : '' %>>EDO</option>
+				<option value="EKITI" <%= contact_addstate == 'EKITI' ?  'selected' : '' %>>EKITI</option>
+				<option value="ENUGU" <%= contact_addstate == 'ENUGU' ?  'selected' : '' %>>ENUGU</option>
+				<option value="FCT" <%= contact_addstate == 'FCT' ?  'selected' : '' %>>FCT</option>
+				<option value="GOMBE" <%= contact_addstate == 'GOMBE' ?  'selected' : '' %>>GOMBE</option>
+				<option value="IMO" <%= contact_addstate == 'IMO' ?  'selected' : '' %>>IMO</option>
+				<option value="JIGAWA" <%= contact_addstate == 'JIGAWA' ?  'selected' : '' %>>JIGAWA</option>
+				<option value="KADUNA" <%= contact_addstate == 'KADUNA' ?  'selected' : '' %>>KADUNA</option>
+				<option value="KANO" <%= contact_addstate == 'KANO' ?  'selected' : '' %>>KANO</option>
+				<option value="KATSINA" <%= contact_addstate == 'KATSINA' ?  'selected' : '' %>>KATSINA</option>
+				<option value="KEBBI" <%= contact_addstate == 'KEBBI' ?  'selected' : '' %>>KEBBI</option>
+				<option value="KOGI" <%= contact_addstate == 'KOGI' ?  'selected' : '' %>>KOGI</option>
+				<option value="KWARA" <%= contact_addstate == 'KWARA' ?  'selected' : '' %>>KWARA</option>
+				<option value="LAGOS" <%= contact_addstate == 'LAGOS' ?  'selected' : '' %>>LAGOS</option>
+				<option value="NASARAWA" <%= contact_addstate == 'NASARAWA' ?  'selected' : '' %>>NASARAWA</option>
+				<option value="NIGER" <%= contact_addstate == 'NIGER' ?  'selected' : '' %>>NIGER</option>
+				<option value="OGUN" <%= contact_addstate == 'OGUN' ?  'selected' : '' %>>OGUN</option>
+				<option value="ONDO" <%= contact_addstate == 'ONDO' ?  'selected' : '' %>>ONDO</option>
+				<option value="OSUN" <%= contact_addstate == 'OSUN' ?  'selected' : '' %>>OSUN</option>
+				<option value="OYO" <%= contact_addstate == 'OYO' ?  'selected' : '' %>>OYO</option>
+				<option value="PLATEAU" <%= contact_addstate == 'PLATEAU' ?  'selected' : '' %>>PLATEAU</option>
+				<option value="RIVERS" <%= contact_addstate == 'RIVERS' ?  'selected' : '' %>>RIVERS</option>
+				<option value="SOKOTO" <%= contact_addstate == 'SOKOTO' ?  'selected' : '' %>>SOKOTO</option>
+				<option value="TARABA" <%= contact_addstate == 'TARABA' ?  'selected' : '' %>>TARABA</option>
+				<option value="YOBE" <%= contact_addstate == 'YOBE' ?  'selected' : '' %>>YOBE</option>
+				<option value="ZAMFARA" <%= contact_addstate == 'ZAMFARA' ?  'selected' : '' %>>ZAMFARA</option>
+
+		</select></td>
+                            <td style="height: 30px;">
+                                State</td>
+                            <td style="height: 30px;">
+				<select name="permanent_addstate" id="permanent_addstate" tabindex="39" style="font-family: Verdana; font-size: 8pt; height: 24px; width: 184px;">
+				<option value=" " <%= permanent_addstate == null ?  'selected' : '' %>>::: Select ::: </option>
+				<option value="ABIA" <%= permanent_addstate == 'ABIA' ?  'selected' : '' %>>ABIA</option>
+				<option value="ADAMAWA" <%= permanent_addstate == 'ADAMAWA' ?  'selected' : '' %>>ADAMAWA</option>
+				<option value="AKWA IBOM" <%= permanent_addstate == 'AKWA IBOM' ?  'selected' : '' %>>AKWA IBOM</option>
+				<option value="ANAMBRA" <%= permanent_addstate == 'ANAMBRA' ?  'selected' : '' %>>ANAMBRA</option>
+				<option value="BAUCHI" <%= permanent_addstate == 'BAUCHI' ?  'selected' : '' %>>BAUCHI</option>
+				<option value="BAYELSA" <%= permanent_addstate == 'BAYELSA' ?  'selected' : '' %>>BAYELSA</option>
+				<option value="BENUE" <%= permanent_addstate == 'BENUE' ?  'selected' : '' %>>BENUE</option>
+				<option value="BORNO" <%= permanent_addstate == 'BORNO' ?  'selected' : '' %>>BORNO</option>
+				<option value="CROSS RIVER" <%= permanent_addstate == 'CROSS RIVER' ?  'selected' : '' %>>CROSS RIVER</option>
+				<option value="DELTA" <%= permanent_addstate == 'DELTA' ?  'selected' : '' %>>DELTA</option>
+				<option value="EBONYI" <%= permanent_addstate == 'EBONYI' ?  'selected' : '' %>>EBONYI</option>
+				<option value="EDO" <%= permanent_addstate == 'EDO' ?  'selected' : '' %>>EDO</option>
+				<option value="EKITI" <%= permanent_addstate == 'EKITI' ?  'selected' : '' %>>EKITI</option>
+				<option value="ENUGU" <%= permanent_addstate == 'ENUGU' ?  'selected' : '' %>>ENUGU</option>
+				<option value="FCT" <%= permanent_addstate == 'FCT' ?  'selected' : '' %>>FCT</option>
+				<option value="GOMBE" <%= permanent_addstate == 'GOMBE' ?  'selected' : '' %>>GOMBE</option>
+				<option value="IMO" <%= permanent_addstate == 'IMO' ?  'selected' : '' %>>IMO</option>
+				<option value="JIGAWA" <%= permanent_addstate == 'JIGAWA' ?  'selected' : '' %>>JIGAWA</option>
+				<option value="KADUNA" <%= permanent_addstate == 'KADUNA' ?  'selected' : '' %>>KADUNA</option>
+				<option value="KANO" <%= permanent_addstate == 'KANO' ?  'selected' : '' %>>KANO</option>
+				<option value="KATSINA" <%= permanent_addstate == 'KATSINA' ?  'selected' : '' %>>KATSINA</option>
+				<option value="KEBBI" <%= permanent_addstate == 'KEBBI' ?  'selected' : '' %>>KEBBI</option>
+				<option value="KOGI" <%= permanent_addstate == 'KOGI' ?  'selected' : '' %>>KOGI</option>
+				<option value="KWARA" <%= permanent_addstate == 'KWARA' ?  'selected' : '' %>>KWARA</option>
+				<option value="LAGOS" <%= permanent_addstate == 'LAGOS' ?  'selected' : '' %>>LAGOS</option>
+				<option value="NASARAWA" <%= permanent_addstate == 'NASARAWA' ?  'selected' : '' %>>NASARAWA</option>
+				<option value="NIGER" <%= permanent_addstate == 'NIGER' ?  'selected' : '' %>>NIGER</option>
+				<option value="OGUN" <%= permanent_addstate == 'OGUN' ?  'selected' : '' %>>OGUN</option>
+				<option value="ONDO" <%= permanent_addstate == 'ONDO' ?  'selected' : '' %>>ONDO</option>
+				<option value="OSUN" <%= permanent_addstate == 'OSUN' ?  'selected' : '' %>>OSUN</option>
+				<option value="OYO" <%= permanent_addstate == 'OYO' ?  'selected' : '' %>>OYO</option>
+				<option value="PLATEAU" <%= permanent_addstate == 'PLATEAU' ?  'selected' : '' %>>PLATEAU</option>
+				<option value="RIVERS" <%= permanent_addstate == 'RIVERS' ?  'selected' : '' %>>RIVERS</option>
+				<option value="SOKOTO" <%= permanent_addstate == 'SOKOTO' ?  'selected' : '' %>>SOKOTO</option>
+				<option value="TARABA" <%= permanent_addstate == 'TARABA' ?  'selected' : '' %>>TARABA</option>
+				<option value="YOBE" <%= permanent_addstate == 'YOBE' ?  'selected' : '' %>>YOBE</option>
+				<option value="ZAMFARA" <%= permanent_addstate == 'ZAMFARA' ?  'selected' : '' %>>ZAMFARA</option>
+		</select></td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td style="height: 30px;">
+                                Zip Code</td>
+                            <td style="width: 247px; height: 30px;">
+				<input name="contact_addzip" maxlength="100" value="<%=contact_addzip %>" id="contact_addzip" tabindex="33" class="textbox" style="  width: 184px;" type="text"></td>
+                            <td style="height: 30px;">
+                                Zip Code</td>
+                            <td style="height: 30px;">
+				<input name="permanent_addzip" maxlength="100" value="<%=permanent_addzip %>" id="permanent_addzip" tabindex="41" class="textbox" style="  width: 184px;" type="text"></td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td colspan="4">
+                            </td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td colspan="2">
+                                <strong>
+                                Telephone Numbers</strong></td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 8pt;">
+                            <td style="height: 30px;">Mobile<span style="color: rgb(255, 0, 51);">*</span></td>
+                            <td style="width: 247px; height: 30px;">
+				<input name="mobile_number" value="<%=mobile_number %>" maxlength="100" id="mobile_number" tabindex="42" class="textbox" style="  width: 184px;" type="text"><span id="RequiredFieldValidator1" style="color: White; left: -79px; position: static; top: 108px; visibility: hidden;">*</span></td>
+                            <td colspan="2" rowspan="2" align="center" valign="middle" style="height: 30px;"><span id="display_message" style="display:none" onclick="calldialog(&#39;display_message&#39;);" title="User Details"></span>
+				</td>
+                          </tr>
+                        <tr style="font-size: 8pt;">
+                            <td>&nbsp;</td>
+                            <td style="width: 247px;"></td>
+                                                		<input type="hidden" value="<%=userID %>" name="userID" />
+                          </tr>
+                    </tbody></table>
+                
+</div>
+                            <table style="font-size: 8pt; font-family: Verdana;" width="100%">
+                <tbody><tr>
+                    <td align="center" valign="middle">
+                       
+<span class="submit">
+                        &nbsp;<input type="submit" name="submit" id="submit" value="Update" >
+                    &nbsp;&nbsp;
+				    <input name="btReset" value="Reset" id="btReset" style="height: 24px; width: 89px;" type="submit" >
+                    </span>
+                    	<span id="operation" style="display:none;">edit</span>	
+                  </td>
+                </tr>
+                <tr>
+                    <td align="center">
+
+                        </td>
+                </tr>
+            </tbody></table>
+                        &nbsp;
+	</form>	
+</div></div>
+               </td>
+            </tr>
+            <tr><td height="8" align="center"><div style="border-bottom:thin dotted #333; height:8px">&nbsp;</div></td></tr>
+       
+       <tr><td bgcolor="#333333">&nbsp;&nbsp;</td></tr>
+        </tbody></table>
+                    &nbsp;&nbsp;
+                     
+                </td>
+            </tr>
+            <tr>
+                <td height="8" align="center"><div style="border-bottom:thin dotted #333; height:8px">&nbsp;</div>            </td>
+            </tr>
+        </tbody></table>
+     
+</form>
